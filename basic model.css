@@ -2,11 +2,9 @@
     max-width: 400px;
     margin: 10px;
     border: 1px solid rgb(0, 0, 0);
-    padding: 15px;
-    background-color: #1a365d;
-    /* Fond bleu sombre */
-    color: #ffffff;
-    /* Texte blanc */
+    padding: 15px;                  
+    background-color: #1a365d;      /* Couleur bleue/sombre du fond */
+    color: #ffffff;                 /* Couleur blanche du texte */
 }
 
 .callout img {
