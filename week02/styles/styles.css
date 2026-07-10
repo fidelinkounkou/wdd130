@@ -9,13 +9,13 @@ nav a {
     display: block;
 }
 
+h1 {
+    color: #1a365d;
+}
+
 main {
     max-width: 960px;
     margin: 0 auto;
-}
-
-h1 {
-    color: #1a365d;
 }
 
 main img {
@@ -37,6 +37,11 @@ aside {
 
 aside img {
     width: 200px;
+    height: auto;
+}
+
+main img {
+    width: 150px;
     height: auto;
 }
 
