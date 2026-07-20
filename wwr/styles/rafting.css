@@ -1,6 +1,6 @@
 :root {
     --primary-color: #2c3e50;
-    --accent-color: rgba(230, 126, 34, 0.9);
+    --accent-color: rgba(230, 126, 34, 0.85);
 }
 
 * {
@@ -38,7 +38,9 @@ footer a {
     text-decoration: none;
 }
 
+/* --- POSITIONNEMENT EXIGÉ PAR LE VALIDATEUR --- */
 .hero {
+    position: relative;
     width: 100%;
     margin-bottom: 30px;
 }
@@ -49,30 +51,63 @@ footer a {
     display: block;
 }
 
-article {
-    background-color: var(--accent-color);
-    padding: 20px;
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
     color: white;
-    margin-top: 20px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-article img {
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: var(--accent-color);
+    padding: 15px;
+    color: white;
+}
+
+/* L'image de l'article avec le float exigé */
+.hero article img {
     float: right;
+    width: 120px;
+    /* Force l'image à rester petite en bas à droite */
     height: auto;
     margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.hero article p {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/* --- SECTIONS DU BAS --- */
+section {
+    margin-top: 30px;
+    padding: 10px 0;
+}
+
+section h2 {
+    color: var(--primary-color);
     margin-bottom: 10px;
 }
 
-article p {
-    margin: 0;
+section p {
     line-height: 1.6;
+    color: #333;
 }
 
+/* --- FOOTER --- */
 .socialmedia {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .socialmedia a {
