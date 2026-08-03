@@ -3,17 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | White Water Rafting</title>
-    <meta name="description" content="Learn about our rafting company, history, and adventures.">
-    <meta name="author" content="Fideli Nkounkou">
-    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Contact Us - Rafting Company</title>
+    <meta name="description"
+      content="Contact Rafting Company for inquiries, reservations, or suggestions.">
+    <link rel="stylesheet" href="rafting.css">
 </head>
 
 <body>
-
     <header>
-        <img src="images/logo.jpg" alt="Rafting Site Logo" width="100">
+        <h1>Rafting Company</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -23,38 +21,68 @@
     </header>
 
     <main>
-        <div class="hero">
-            <img src="images/banniere.jpg" alt="Rafting Adventure">
-            <h1>Rapids! Make Memories!</h1>
-            <article>
-                <img src="images/client.jpg" alt="Rafting Guide">
-                <p>Our mission is to deliver the ultimate whitewater rafting experience, combining
-                    thrilling adventures with top-tier safety.</p>
-            </article>
-        </div>
-
+        <!-- Infos entreprise -->
         <section>
-            <h2>History</h2>
-            <p>Founded with a passion for the river, we have been guiding adventurers through
-                beautiful canyons and thrilling rapids for over twenty years.</p>
+            <h2>Contact Information</h2>
+            <p>White Water Rafting Company<br>
+                123 Main River Street<br>
+                Kolob, California<br>
+                +1 999 999 9999<br>
+                info@whitewater.com</p>
+            <iframe src="GOOGLE_MAPS_URL" width="400" height="300"></iframe>
         </section>
 
+        <!-- Formulaire -->
         <section>
-            <h2>Adventure Awaits You</h2>
-            <p>Whether you are a beginner or an adrenaline seeker, our expert guides ensure an
-                unforgettable journey down the river.</p>
+            <h2>Get in Touch</h2>
+            <form>
+                <label>Name: <input type="text" name="name"></label><br>
+                <label>Email: <input type="email" name="email"></label><br>
+
+                <p>Message Purpose:</p>
+                <label><input type="radio" name="purpose" value="general"> General
+                    Inquiry</label><br>
+                <label><input type="radio" name="purpose" value="reservation"> Reservation
+                    Question</label><br>
+                <label><input type="radio" name="purpose" value="suggestion"> Website
+                    Suggestion</label><br>
+
+                <label>Message:<br>
+                    <textarea name="message"></textarea>
+                </label><br>
+
+                <label><input type="checkbox" name="newsletter"> Subscribe to newsletter</label><br>
+
+                <button type="submit">Get in Touch!</button>
+            </form>
+        </section>
+
+        <!-- Profils employés -->
+        <section>
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee">
+                <img src="employee1.jpg" alt="Guide John">
+                <p>Guide - John Doe</p>
+            </div>
+            <div class="employee">
+                <img src="employee2.jpg" alt="Manager Jane">
+                <p>Manager - Jane Smith</p>
+            </div>
+            <div class="employee">
+                <img src="employee3.jpg" alt="Instructor Alex">
+                <p>Instructor - Alex Brown</p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 | White Water Rafting | Fideli Nkounkou</p>
-        <p>
-            <a href="#"><img src="images/facebook.png" alt="Facebook Logo" width="30"></a>
-            <a href="#"><img src="images/instagram.jpg" alt="Instagram Logo" width="30"></a>
-            <a href="#"><img src="images/linkedin.jpg" alt="LinkedIn Logo" width="30"></a>
-        </p>
+        <p>&copy; 2026 Rafting Company</p>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
     </footer>
-
 </body>
 
 </html>
