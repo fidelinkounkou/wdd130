@@ -1,90 +1,88 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --primary-color: #0066cc;
-    --accent-color: #ff9900;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0066cc;
+  color: white;
+  padding: 1rem;
 }
 
-header nav {
-    display: flex;
-    gap: 20px;
+header img {
+  height: 60px;
 }
 
-header nav a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: bold;
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
-.hero {
-    position: relative;
-    text-align: center;
+nav a:hover {
+  text-decoration: underline;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
+.contact-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
 }
 
-.hero h1 {
-    margin: 20px 0;
-    font-size: 2.5rem;
+.map iframe {
+  border: 0;
+  width: 400px;
+  height: 300px;
 }
 
-.hero article {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left;
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-.hero article img {
-    float: right;
-    margin: 0 0 20px 20px;
-    width: 200px;
-    height: auto;
+form label {
+  margin-top: 10px;
 }
 
-section {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 0 20px;
+button {
+  margin-top: 15px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
 }
 
-section h2 {
-    margin-bottom: 10px;
+button:hover {
+  background-color: #004999;
+}
+
+.employees {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.employees figure {
+  text-align: center;
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-top: 1px solid #000;
-    margin-top: 40px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
 
 footer .socialmedia {
-    display: flex;
-    gap: 15px;
+  margin-bottom: 1rem;
 }
 
-footer .socialmedia img {
-    width: 40px;
-    height: auto;
-}
-
-footer .socialmedia a {
-    text-decoration: none;
+footer .socialmedia a img {
+  width: 40px;
+  margin: 0 10px;
 }
