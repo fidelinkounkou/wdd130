@@ -1,34 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 130 - My Learning Portal</title>
-  <meta name="author" content="Prisca Fideli Kounkou">
-  <link rel="stylesheet" href="styles/styles.css">
+  <meta name="description"
+    content="Welcome to Dry Oar Rafting. Discover exciting white water rafting trips, beautiful camping sites, and unforgettable river adventures.">
+  <title>Home - Dry Oar Rafting</title>
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
+
   <header>
+    <div class="logo-box">
+      <img src="images/logo.jpg" alt="Dry Oar Rafting Logo" class="logo">
+    </div>
     <nav>
-      <a href="#">Home</a>
-      <a href="wwr/">Rafting Website</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="trips.html">Trips</a>
+      <a href="site-plan.html">Site Plan</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
   <main>
-    <h1>WDD 130 - My Learning Portal</h1>
-    <p>Hello, my name is fideli nKounkou. And i'm so excited to learn in this  course of programing wd130.</p>
-    <img src="images/franse.png" alt="Profile picture of fideli Knounkou">
+    <section class="hero-banner">
+      <img src="images/banniere.jpg" alt="People rafting down a fast river" class="hero-image">
+      <div class="hero-content">
+        <h1>HAVE AN ADVENTURE</h1>
+        <p>Make Memories with Dry Oar</p>
+        <a href="trips.html" class="cta-button">Book Now</a>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <h2>Join Our Newsletter</h2>
+      <p>Sign up to receive special offers and updates on river conditions!</p>
+      <form action="#" method="post" class="newsletter-form">
+        <input type="text" name="user_name" placeholder="Full Name" required>
+        <input type="email" name="user_email" placeholder="Email Address" required>
+        <button type="submit" class="submit-button">Subscribe</button>
+      </form>
+    </section>
+
+    <section class="trips-grid">
+      <div class="grid-item">
+        <img src="images/adventure1.jpg" alt="Winding river in mountains">
+        <h3>Rivers</h3>
+      </div>
+      <div class="grid-item">
+        <img src="images/adventure5.jpg" alt="Tent set up near mountains">
+        <h3>Camping</h3>
+      </div>
+      <div class="grid-item">
+        <img src="images/adventure4.jpg" alt="Raft battling big waves">
+        <h3>Rapids</h3>
+      </div>
+    </section>
   </main>
 
-  <aside>
-    <h2>Republic of the Congo</h2>
-    <p>This is my home country, known for its culture and landscapes.</p>
-    <img src="images/congo.webp" alt="Landscape or symbol of the Republic of the Congo">
-  </aside>
-
   <footer>
-    <p>&copy; 2026 fideli nKounkou</p>
+    <p>&copy; 2026 | Exciting Expeditions | fideli nKounkou</p>
+    <nav class="socialmedia">
+      <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook.webp" alt="Facebook Icon">
+      </a>
+      <a href="https://linkedin.com" target="_blank">
+        <img src="images/linkedin.jpg" alt="LinkedIn Icon">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="images/instagram.jpg" alt="Instagram Icon">
+      </a>
+    </nav>
   </footer>
+
 </body>
+
 </html>
