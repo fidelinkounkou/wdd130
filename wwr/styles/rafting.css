@@ -44,7 +44,7 @@ article {
 }
 
 nav a:hover {
-    color: var(--secondary-color--);
+    color: var(--secondary-color);
 }
 
 .socialmedia a {
