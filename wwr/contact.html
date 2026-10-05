@@ -38,12 +38,15 @@
         <div class="contact-container">
 
             <div class="map-box">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d127322.02119863605!2d15.269888!3d-4.2565632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2scg!4v1790887357035!5m2!1sfr!2scg"
-                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="strict-origin-when-cross-origin"></iframe>" width="600"
-                height="450" style="border:0;" allowfullscreen=""
-                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="map-box">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3978.969505290704!2d15.24110521506119!3d-4.226206176822075!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2scg!4v1791196241301!5m2!1sfr!2scg"
+                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="strict-origin-when-cross-origin"></iframe>" width="600"
+                    height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
             </div>
 
             <form action="#" method="post" class="contact-form">
@@ -61,20 +64,24 @@
                     <p>Message Purpose</p>
 
                     <label>
-                        <input type="radio" name="purpose" value="general" checked> General
+                        <input type="radio" id="purpose-general" name="purpose" value="general"
+                          checked> General
                         Inquiry
                     </label>
 
                     <label>
-                        <input type="radio" name="purpose" value="reservation"> Reservation
+                        <input type="radio" id="purpose-reservation" name="purpose"
+                          value="reservation"> Reservation
                         Question
                     </label>
 
                     <label>
-                        <input type="radio" name="purpose" value="suggestion"> Website
+                        <input type="radio" id="purpose-suggestion" name="purpose"
+                          value="suggestion"> Website
                         Suggestion
                     </label>
                 </div>
+
 
                 <div class="form-field">
                     <label for="message">Message</label>
